@@ -1,5 +1,4 @@
-input1 = ARGV
-
+# player class handling scorekeeping
 class Player
   attr_accessor :score
   attr_reader :name
@@ -8,13 +7,4 @@ class Player
     @name = name
     self.score = 3
   end
-
-  def info
-    puts "My name is #{name}!"
-  end
-
 end
-
-player1 = Player.new(input1)
-
-player1.info
